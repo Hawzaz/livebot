@@ -1,3 +1,5 @@
+const http = require('http');
+
 const config = require('./config.json');
 
 const axios = require('axios');
@@ -16,7 +18,10 @@ const MiniDb = require('./minidb');
 
 // --- Startup ---------------------------------------------------------------------------------------------------------
 console.log('Le bot démarre.');
+http.createServer(function(request, response){
+	response.end("Hello world");
 
+}).listen(3000)
 // --- Cleverbot init --------------------------------------------------------------------------------------------------
 let cleverbot = null;
 
