@@ -15,7 +15,7 @@ const LiveEmbed = require('./live-embed');
 const MiniDb = require('./minidb');
 
 // --- Startup ---------------------------------------------------------------------------------------------------------
-console.log('Timbot is starting.');
+console.log('Le bot démarre.');
 
 // --- Cleverbot init --------------------------------------------------------------------------------------------------
 let cleverbot = null;
